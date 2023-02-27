@@ -12,3 +12,8 @@
     font-family: sans-serif;
     color: #1F2937;
   }
+
+  .extraspace {
+    height: 500px; 
+    border: 1px solid black; 
+  }
