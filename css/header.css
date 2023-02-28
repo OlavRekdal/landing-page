@@ -1,7 +1,5 @@
-
-a:link,
-a:visited {
-  color: #5D6063;
+a:link, a:visited {
+  color: white;
   text-decoration: none;
 }
 
@@ -9,52 +7,59 @@ a:hover {
   text-decoration: underline;
 }
 
-.header {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 30px;
-  background: #1F2937;
-  z-index: 999; 
-  border: 1px solid white;
+nav {
+    position: fixed;
+    height: 75px; 
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+    background-color: #1F2937;
+    color: #f9faf9; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
 }
 
 .header img {
-  height: 50px; 
-  width: 100px;
-  display: inline-block;
+    height: 70px;
+    min-height: 100%; 
+    min-width: 100%; 
+    display: inline-block;
+    flex-shrink: 0;
+    padding-left: 50px; 
+
 }
 
 .menu {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+    list-style: none;  
+    color: white;
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    min-width: 33%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 10px; 
 }
 
-.menu > li {
-  display: inline-block;
-  margin-right: 50px;
-  text-align: center;
-}
-
-.menu > li:last-of-type {
-  margin-right: 0;
+.nav-item {
+    color: white; 
 }
 
 .nav-item a {
-  display: inline-block;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: white;
-}
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+  }
 
 .nav-item:hover {
-  background-color: white;
-  border-radius: 10px;
-}
-
+    background-color: white;
+    border-radius: 10px;
+  }
+  
 .nav-item:hover a {
   color: darkgreen;
 }
+
