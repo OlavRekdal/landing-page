@@ -11,17 +11,19 @@
     <link rel="stylesheet" href="./css/s2.css">
 </head>
 <body>
-    <nav class="header">
+    <header id="header" class="header">
         <!-- Title and three links -->
-        <div class='logo'><img src='./images/logo.jpeg'/></div>
-        <ul class='menu'>
-            <li class="nav-item"><a href='#'>Blog</a></li>          <!-- These are the same -->
-            <li class="nav-item"><a href='#'>Subscribe</a></li>
-            <li class="nav-item"><a href='#'>About</a></li>
+        <div class='logo'><img id="header-img" src='http://example.com/logo.jpeg' alt="Logo"/></div>
+        <nav id="nav-bar" class='menu'>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href='#section-1'>Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href='#section-2'>Subscribe</a></li>
+                <li class="nav-item"><a class="nav-link" href='#section-3'>About</a></li>
             </ul>
-    </nav>
+        </nav>
+    </header>
 
-    <section class="section-1">
+    <section id="section-1" class="section-1">
         <!-- Two parts, left: H1, p and sign in button. right: pic -->
         <div class="s1-left">
             <h1>This is a cool website</h1>
@@ -30,12 +32,11 @@
         </div>
 
         <div class="s1-right">
-            <img id="funnypic" src="./images/s1-img.jpg">
-
+            <img id="funnypic" src="./images/s1-img.jpg" alt="Funny Pic">
         </div>
     </section>
 
-    <section class="section-2">
+    <section id="section-2" class="section-2">
         <!-- centers H1, 4 pics with bildetekst -->
         <h2>Some random information.</h2>
         <div class="picsandtext">
@@ -58,12 +59,20 @@
          </div>
     </section>
 
-    <section class="section-3">
+    <section id="section-3" class="section-3">
         <!-- quote with left aligned name under -->
+        <video id="video" controls>
+            <source src="http://example.com/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
-    <section class="section-4">
+    <section id="section-4" class="section-4">
         <!-- two parts, left: H2 and p, right: sign up button-->
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" id="submit" value="Submit">
+        </form>
     </section>
 
     <section class="footer">
@@ -71,7 +80,5 @@
     </section>
 
     <div class="extraspace"></div>
-
-
 </body>
 </html>
