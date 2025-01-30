@@ -3,17 +3,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Base styles */
-  body {
+}
+
+/* Base styles */
+body {
     height: 1200px;
     font-size: 18px;
     font-family: sans-serif;
     color: #1F2937;
-  }
+}
 
-  .extraspace {
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #1F2937;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.picsandtext {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.oneoffour {
+    flex: 1;
+    text-align: center;
+}
+
+.extraspace {
     height: 500px; 
     border: 1px solid black; 
-  }
+}
+
+@media (max-width: 600px) {
+    .section-1 {
+        flex-direction: column;
+    }
+    .picsandtext {
+        flex-direction: column;
+    }
+}
